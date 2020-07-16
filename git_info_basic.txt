@@ -48,3 +48,16 @@ Clone repositories
 Update local repo:
 	git pull
 	
+	
+
+----Branches----
+
+See branches (asterisk denotes current branch location):
+	git branch
+	
+Create new branch:
+	git brach <new branch name>
+	
+Switch branch:
+	git checkout <branch name>
+	
