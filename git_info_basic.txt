@@ -77,3 +77,9 @@ Remove remote branch:
 Push branch to remote repo
 	git push --set-upstream origin <branch name> (use first timem the only need git push)
 	
+
+
+----Collaboration----
+
+
+	
