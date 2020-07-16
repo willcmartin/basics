@@ -61,3 +61,13 @@ Create new branch:
 Switch branch:
 	git checkout <branch name>
 	
+Create and switch to new branch:
+	git checkout -b <new branch name>
+	
+Merge branch to current branch:
+	git merge <branch name>
+	
+Remove branch:
+	git branch -d <branch name>
+	
+	
