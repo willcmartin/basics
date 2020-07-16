@@ -69,6 +69,9 @@ Merge branch to current branch:
 	
 Remove branch:
 	git branch -d <branch name>
+	
+Remove remote branch:
+	git push origin --delete <branch name>
 
 Push branch to remote repo
 	git push --set-upstream origin <branch name> (use first timem the only need git push)
