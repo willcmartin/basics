@@ -1,5 +1,7 @@
 How to use GitHub
 
+Helpful link: https://rubygarage.org/blog/most-basic-git-commands-with-examples
+
 Sign in:
 	git config --global user.name "WillMartin7"
 	git config --global user.email "wcmartin01@gmail.com"
