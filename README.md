@@ -16,7 +16,7 @@
 
 Algorithm:
 1. Choose large prime numbers p and q (larger = more robust)
-2. n = pq and z=(p-1)(q-1)
+2. n = pq and z = (p-1)(q-1) (z = totient)
 3. Choose e: e < n, gcd(e,z) = 1 (greatest common divisor = 1),
 e and z are prime numbers
 4. ed % z = 1 (ed-1 is exactly divisible by z)
@@ -30,5 +30,4 @@ c = m^e % n
 m = c^d % n
 
 Reasoning:
-
 - No known algorithms for quick prime factorization (factor n into p and q)
