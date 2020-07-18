@@ -12,7 +12,7 @@
     - private key (secret)
 - Generated using one-way function
 
-###[RSA algorithm](https://www.quora.com/How-do-you-generate-a-public-and-private-key):
+### [RSA algorithm](https://www.quora.com/How-do-you-generate-a-public-and-private-key):
 
 Algorithm:
 1. Choose large prime numbers p and q (larger = more robust)
