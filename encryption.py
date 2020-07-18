@@ -18,6 +18,7 @@ n_bits = m_bits + 2
 
 
 # TODO: simplify generation of p and q
+# https://www.di-mgt.com.au/rsa_alg.html
 rand = (random.getrandbits(math.ceil(n_bits/2)))
 if (rand % 2) == 0:
     rand = rand + 1
