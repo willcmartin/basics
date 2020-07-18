@@ -30,4 +30,5 @@ c = m^e % n
 m = c^d % n
 
 Reasoning:
+
 No known algorithms for quick prime factorization (factor n into p and q)
