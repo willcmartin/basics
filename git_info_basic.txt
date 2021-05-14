@@ -1,0 +1,85 @@
+How to use GitHub
+Creation Date: 7-15-2020
+
+Helpful link: https://rubygarage.org/blog/most-basic-git-commands-with-examples
+
+Sign in:
+	git config --global user.name "WillMartin7"
+	git config --global user.email "wcmartin01@gmail.com"
+
+Initialize empty Git reposity (inside of <current_directory>/.git/:
+	git init
+	
+Check status of repo:
+	git status
+	
+Add files to staging area:
+	git add <file name> (for specific file)
+	git add . (for all files in root directory)
+	git add --all (for all files)
+	
+Remove files from staging area:
+	git rm --cached <file name>
+
+Commit files to repo:
+	git commit -m "commit message"
+	
+Add files to staging area and commit:
+	git commit -a -m "commit message"
+	
+Undo commit:
+	git reset --soft HEAD^
+	
+Change las commit:
+	git add <file name>
+	git commit --amend -m "commit message"
+	
+Bind remote repository to local repository:
+	git remote add origin <remote repository GitHub link>
+	
+Push code to remote repository:
+	git push -u origin master (use -u first time, then only need git push)
+	
+View repositories:
+	git remote -v
+	
+Clone repositories
+	git clone git@github.com:WillMartin7/<repo>.git
+	
+Update local repo:
+	git pull
+	
+	
+
+----Branches----
+
+See branches (asterisk denotes current branch location):
+	git branch
+	
+Create new branch:
+	git brach <new branch name>
+	
+Switch branch:
+	git checkout <branch name>
+	
+Create and switch to new branch:
+	git checkout -b <new branch name>
+	
+Merge branch to current branch:
+	git merge <branch name>
+	
+Remove branch:
+	git branch -d <branch name>
+	
+Remove remote branch:
+	git push origin --delete <branch name>
+
+Push branch to remote repo
+	git push --set-upstream origin <branch name> (use first timem the only need git push)
+	
+
+
+----Collaboration----
+
+
+	
