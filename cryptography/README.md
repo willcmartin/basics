@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# basics
-for fun and learning
-=======
 # Encryption
 
 ## Symmetric key cryptography:
@@ -35,4 +31,3 @@ m = c^d % n
 
 Reasoning:
 - No known algorithms for quick prime factorization (factor n into p and q)
->>>>>>> encryption/master
