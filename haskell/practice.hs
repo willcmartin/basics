@@ -1,10 +1,11 @@
+-- http://learnyouahaskell.com
+
 doubleMe x = x + x
 
 doubleUs x y = x*2 + y*2
 
 addThree :: Int -> Int -> Int -> Int
 addThree x y z = x + y + z
-
 
 factorial :: Int -> Int
 factorial 0 = 1
@@ -14,7 +15,6 @@ factorial' :: (Integral b) => b -> b
 factorial' b
         | b == 0 = 1
         | otherwise = b * factorial' (b-1)
-
 
 replicate' :: (Num i, Ord i) => i -> i -> [i]
 replicate' a b
@@ -27,3 +27,19 @@ take' a [_]
         | a <= 0 = []
 take' _ [] = []
 take' a (x:xs) = x : take' (a-1) xs
+
+reverse' :: [a] -> [a]
+reverse' [] = []
+reverse' (x:xs) = reverse xs ++ [x]
+
+quicksort :: (Ord a) => [a] -> [a]
+quicksort [] = []
+quicksort (x:xs) =
+    let smSorted = quicksort [a | a <- xs, a <= x]
+        bigSorted = quicksort [a | a <- xs, a > x]
+    in smSorted ++ [x] ++ bigSorted
+
+zipWith' :: (a -> b -> c) -> [a] -> [b] -> [c]
+zipWith' _ [] _ = []
+zipWith' _ _ [] = []
+zipWith' f (a:as) (b:bs) = f a b : zipWith' f as bs
