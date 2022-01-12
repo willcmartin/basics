@@ -43,3 +43,16 @@ zipWith' :: (a -> b -> c) -> [a] -> [b] -> [c]
 zipWith' _ [] _ = []
 zipWith' _ _ [] = []
 zipWith' f (a:as) (b:bs) = f a b : zipWith' f as bs
+
+applyTwice :: (a -> a) -> a -> a
+applyTwice f x = f (f x)
+
+map' :: (a -> b) -> [a] -> [b]
+map' _ [] = []
+map' f (x:xs) = f x : map' f xs
+
+filter' :: (a -> Bool) -> [a] -> [a]
+filter' _ [] = []
+filter' f (x:xs)
+    | f x = x : filter' f xs
+    | otherwise = filter' f xs
